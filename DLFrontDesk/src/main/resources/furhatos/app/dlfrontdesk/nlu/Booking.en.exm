@@ -1,5 +1,6 @@
-I want to book a room
-I want to book a room for @duration @duration_scale
+I want to book @room
+I want to book @room for @duration @duration_scale
+Can I book @room @date ?
 I want a room from @from to @to
 I want a room from @from for @duration @duration_scale
 I want to book a room for @activity from @from for @duration @duration_scale

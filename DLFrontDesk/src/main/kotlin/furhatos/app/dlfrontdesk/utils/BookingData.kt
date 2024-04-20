@@ -1,5 +1,6 @@
 package furhatos.app.dlfrontdesk.utils
 
+import com.sun.org.apache.xpath.internal.operations.Bool
 import java.time.LocalDate
 import java.time.LocalTime
 import java.time.Period
@@ -36,7 +37,7 @@ class BookingData(var date: LocalDate? = null, var from: LocalTime? = null, var 
     }
 
     fun room_name_provided() : Boolean{
-        return room_name != null
+        return room_name != null && room_name != "a room"
     }
 
     fun nb_people_provided() : Boolean{
@@ -47,6 +48,10 @@ class BookingData(var date: LocalDate? = null, var from: LocalTime? = null, var 
         room_name = "play"
     }
 
+    fun bookable_room() : Boolean{
+        return room_name == "play" || room_name == "connect" || room_name == "invite"
+    }
+
     fun room_available() : Boolean{
         return true
     }
@@ -55,4 +60,25 @@ class BookingData(var date: LocalDate? = null, var from: LocalTime? = null, var 
 
         return true
     }
+
+    fun get_from_time(): String{
+        val hour : Int? = from?.hour?.toInt()
+        val min : Int? = from?.minute?.toInt()
+        var out : String = hour?.toString().toString()
+        if (min != 0){
+            out += " " + min?.toString()
+        }
+        return out
+    }
+
+    fun get_to_time(): String{
+        val hour : Int? = to?.hour?.toInt()
+        val min : Int? = to?.minute?.toInt()
+        var out : String = hour?.toString().toString()
+        if (min != 0){
+            out += " " + min?.toString()
+        }
+        return out
+    }
+
 }

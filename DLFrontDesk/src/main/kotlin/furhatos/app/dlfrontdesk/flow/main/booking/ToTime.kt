@@ -4,11 +4,47 @@ import furhatos.app.dlfrontdesk.flow.Parent
 import furhatos.app.dlfrontdesk.utils.BookingData
 import furhatos.flow.kotlin.State
 import furhatos.flow.kotlin.furhat
+import furhatos.flow.kotlin.onResponse
 import furhatos.flow.kotlin.state
+import furhatos.nlu.common.DontKnow
+import furhatos.nlu.common.Number
+import furhatos.nlu.common.Time
+import java.time.LocalTime
 
 fun ToTime(bookingData: BookingData): State = state(Parent) {
     onEntry {
-        furhat.say("I don't know bro... They forgot to code this case")
+        if (bookingData.to_time_provided()){
+            if (bookingData.valid_to_time()){
+                furhat.say("A room to from " + bookingData.get_from_time()+ " to "+ bookingData.get_to_time() + " right?" )
+                goto(RoomName(bookingData))
+            }else{
+                val to = furhat.askFor<Time>("The time provided is outside of our opening hours. Until what time do you want the room?") {
+                    onResponse<DontKnow> {
+                        furhat.say("You should really know that!")
+                        reentry()
+                    }
+                    onResponse<Number>{
+                        bookingData.to = LocalTime.of(it.intent.value?.toInt()!!, 0)
+                        goto(FromTime(bookingData))
+                    }
+                }
+                bookingData.to = to?.asLocalTime()
+                reentry()
+            }
+        }else {
+            val to = furhat.askFor<Time>("Until what time do you want the room?") {
+                onResponse<DontKnow> {
+                    furhat.say("You should really know that!")
+                    reentry()
+                }
+                onResponse<Number>{
+                    bookingData.to = LocalTime.of(it.intent.value?.toInt()!!, 0)
+                    goto(FromTime(bookingData))
+                }
+            }
+            bookingData.to = to?.asLocalTime()
+            reentry()
+        }
     }
 
 }
