@@ -15,7 +15,7 @@ fun FromTime(bookingData: BookingData): State = state(Parent) {
     onEntry {
         if (bookingData.from_time_provided()){
             if (bookingData.valid_from_time()){
-                furhat.say("You said you wanted to book a room from " + bookingData.get_from_time() + " right?" )
+                furhat.say("So a room from " + bookingData.get_from_time() )
                 goto(ToTime(bookingData))
             }else{
                 val from = furhat.askFor<Time>("The time provided is outside of our opening hours. From what time do you want the room?") {

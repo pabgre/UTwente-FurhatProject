@@ -5,7 +5,7 @@ import furhatos.app.dlfrontdesk.utils.BookingData
 import furhatos.flow.kotlin.State
 import furhatos.flow.kotlin.state
 
-fun Bye(): State = state(Parent) {
+val Bye: State = state(Parent) {
     onEntry {
 
     }

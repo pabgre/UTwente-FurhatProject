@@ -9,6 +9,7 @@ import furhatos.flow.kotlin.state
 
 fun RoomAvailable(bookingData: BookingData): State = state(Parent) {
     onEntry {
+
         furhat.say("I don't know bro... They forgot to code this case")
     }
 

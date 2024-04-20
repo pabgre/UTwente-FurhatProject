@@ -3,10 +3,7 @@ package furhatos.app.dlfrontdesk.flow.main.booking
 import furhatos.app.dlfrontdesk.enu.Room
 import furhatos.app.dlfrontdesk.flow.Parent
 import furhatos.app.dlfrontdesk.utils.BookingData
-import furhatos.flow.kotlin.State
-import furhatos.flow.kotlin.furhat
-import furhatos.flow.kotlin.onResponse
-import furhatos.flow.kotlin.state
+import furhatos.flow.kotlin.*
 import furhatos.nlu.common.No
 import furhatos.nlu.common.Yes
 
@@ -35,6 +32,10 @@ fun RoomName(bookingData: BookingData): State = state(Parent) {
     onResponse<Yes> {
         bookingData.room_name = furhat.askFor<Room>("Tell me!")?.value
         reentry()
+    }
+
+    onPartialResponse<Yes> {
+        raise(it, it.secondaryIntent)
     }
 
     onResponse<Room>{

@@ -23,12 +23,12 @@ val Greeting: State = state(Parent) {
     onResponse<Booking>{
         var from : LocalTime? = it.intent.from?.asLocalTime()
         var to : LocalTime? = it.intent.to?.asLocalTime()
-        val duration : Number? = it.intent.duration?.toInt()
+        val duration : Number? = it.intent.duration?.value
         var room_name : String? = it.intent.room?.value
         var activity : String? = it.intent.activity?.value
         var date : LocalDate? = it.intent.date?.asLocalDate()
-        var nb_people : Int? = it.intent.n_people?.toInt()
-        var duration_scale : String? = it.intent.duration_scale?.value
+        var nb_people : Int? = it.intent.people?.value
+        var duration_scale : String? = it.intent.durationscale?.value
         if (duration != null){
             if (from == null){
                 from = LocalTime.now()

@@ -15,7 +15,7 @@ fun ToTime(bookingData: BookingData): State = state(Parent) {
     onEntry {
         if (bookingData.to_time_provided()){
             if (bookingData.valid_to_time()){
-                furhat.say("A room to from " + bookingData.get_from_time()+ " to "+ bookingData.get_to_time() + " right?" )
+                furhat.say("Until "+ bookingData.get_to_time() + " right?" )
                 goto(RoomName(bookingData))
             }else{
                 val to = furhat.askFor<Time>("The time provided is outside of our opening hours. Until what time do you want the room?") {
@@ -25,7 +25,7 @@ fun ToTime(bookingData: BookingData): State = state(Parent) {
                     }
                     onResponse<Number>{
                         bookingData.to = LocalTime.of(it.intent.value?.toInt()!!, 0)
-                        goto(FromTime(bookingData))
+                        goto(ToTime(bookingData))
                     }
                 }
                 bookingData.to = to?.asLocalTime()
@@ -39,7 +39,7 @@ fun ToTime(bookingData: BookingData): State = state(Parent) {
                 }
                 onResponse<Number>{
                     bookingData.to = LocalTime.of(it.intent.value?.toInt()!!, 0)
-                    goto(FromTime(bookingData))
+                    goto(ToTime(bookingData))
                 }
             }
             bookingData.to = to?.asLocalTime()
