@@ -1,6 +1,7 @@
 I want to book @room
 I want to book @room for @duration @durationscale
-Can I book @room @date ?
+Can I book @room @date
+can I book @room
 I want a room from @from to @to
 I want a room from @from for @duration @durationscale
 I want to book a room for @activity from @from for @duration @durationscale
@@ -8,11 +9,11 @@ Could you please reserve @room for me?
 I would like to make a room booking.
 I would like to book @room.
 Are there any rooms available at @date?
-I would like to @task, is there a space i could reserve?
-I would like to @task, is there a room i could reserve?
+I would like to do @activity, is there a space i could reserve?
+I would like to do @activity, is there a room i could reserve?
 Do you have any rooms available for booking?
 Do you have any rooms available?
-I am with the @organization, and we are wondering if we could @activity here.
+We are wondering if we could @activity here.
 I would like a quiet room for @activity for @duration @durationscale
 I would like a quiet room for @activity call for @duration @durationscale
 Could you help me arrange a room for @activity?
