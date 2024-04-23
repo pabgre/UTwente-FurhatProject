@@ -10,22 +10,38 @@ import furhatos.nlu.common.Yes
 fun RoomName(bookingData: BookingData): State = state(Parent) {
     onEntry {
         if (bookingData.room_name_provided()){
+            var room_name = bookingData.room_name
             if (bookingData.bookable_room()){
-                furhat.say("Great choice! Let me check if it is available... One second")
+                furhat.say{random {
+                    +	"Great choice! Let me check if it is available... One second	"
+                    +	"Beautiful! Let me see if $room_name is avaiable for you!"
+                    +	"$room_name Got it! Let me check if it's free"
+                    +	"Beautiful! Let me see if $room_name is free for you!"
+                    +	"$room_name Got it! Let me check if it's available"
                 goto(RoomAvailable(bookingData))
-            }
+            }}}
             else{
                 if (bookingData.room_name == "toilet"){
-                    furhat.ask("Really? What are you planning to there? Don't tell me... please")
+                    furhat.ask{ random{
+                        +	"	Really? What are you planning to there? Don't tell me... please	"
+                        +	"	Okay... I won't ask any questions...	"
+                    }}
                 }
                 else{
-                    furhat.ask("I can't help you with booking that room. Do you have any room in mind?")
+                    furhat.ask{ random{
+                        +	"	I can't help you with booking that room. Do you have any other room in mind?	"
+                        +	"	Sorry human, but I'm afraid that room is not bookable. Take a look at the map behind me and choose a new room	"
+                        +	"	Oh oh, seems like I don't have access to book that room. Please choose a different one.	"
+                    }}
                 }
             }
 
         }else{
 
-            furhat.ask("Do you have any room in mind?")
+            furhat.ask {  random{
+                +	"	Do you have any room in mind?	"
+                +	"	Sooo, do you know what room you want?	"
+            } }
         }
     }
 
@@ -44,7 +60,11 @@ fun RoomName(bookingData: BookingData): State = state(Parent) {
     }
 
     onResponse{
-        furhat.say("Let me find something for you...")
+        furhat.say{ random{
+            +	"	Let me find something for you...	"
+            +	"	Give me a second, I will find something for you...	"
+            +	"	Hang in there human! Let me find something for you...	"
+        }}
         goto(DecideRoom(bookingData))
     }
 

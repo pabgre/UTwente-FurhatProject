@@ -1,5 +1,6 @@
 package furhatos.app.dlfrontdesk.flow.main
 
+import furhatos.event.actions.ActionGaze
 import furhatos.flow.kotlin.State
 import furhatos.flow.kotlin.furhat
 import furhatos.flow.kotlin.onUserEnter
@@ -12,7 +13,14 @@ val Idle: State = state {
 
     onUserEnter {
         furhat.attend(it)
+        furhat.say { random{
+            +	"Hello there!"
+            +	"Hey hey!"
+            +	"Wasabi"
+        } }
         goto(Greeting)
     }
+
+
 
 }

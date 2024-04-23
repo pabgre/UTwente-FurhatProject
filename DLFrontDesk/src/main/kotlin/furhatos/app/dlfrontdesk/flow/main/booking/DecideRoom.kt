@@ -17,11 +17,11 @@ fun DecideRoom(bookingData: BookingData): State = state(Parent) {
         if (bookingData.nb_people_provided()){
             if (bookingData.nb_people!! > 20){
                 furhat.say("Buff... Too many people you want to meet with... Contact First Line Support for that. ")
-                goto(Idle)
+                goto(Bye)
             }else{
                 bookingData.find_fiting_room()
                 furhat.say("I think " + bookingData.room_name + " would be a nice fit for your needs!")
-                goto(BookRoom(bookingData))
+                goto(RoomAvailable(bookingData))
             }
 
         }else{

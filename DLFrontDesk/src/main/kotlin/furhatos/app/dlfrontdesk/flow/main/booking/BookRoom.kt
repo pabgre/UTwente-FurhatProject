@@ -9,9 +9,18 @@ import furhatos.flow.kotlin.state
 
 fun BookRoom(bookingData: BookingData): State = state(Parent) {
     onEntry {
-        furhat.say("Perfect! I booked the room for you")
+        furhat.say{random{
+            +	"Perfect! I booked the room for you"
+            +	"Beautiful! The room is yours!"
+            +	"Great! The room is now booked for you!"
+            +	"Good! I booked the room for you"
+        }}
         if (bookingData.inmediate_booking()){
-            furhat.say("Wait for the DreamTeamer on shift. They will give you the key for the room. I don't have hands hahahaha")
+            furhat.say{random{
+                +	"Wait for the DreamTeamer on shift. They will give you the key for the room. I don't have hands hahahaha"
+                +	"Good stuff! Now we just need a DreamTeamer with arms to hand you the key! Stick around until they come back!"
+                +	"Perfect! It's all set! Now we just need someone with hands to pass you the key hehe. Wait for the DreamTeamer to come by"
+            }}
 
         }
         goto(Bye)

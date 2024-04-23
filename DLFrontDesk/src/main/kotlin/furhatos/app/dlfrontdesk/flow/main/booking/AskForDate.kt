@@ -16,14 +16,36 @@ fun AskForDate(bookingData: BookingData): State = state(Parent) {
                 goto(FromTime(bookingData))
             }
             else{
-                furhat.say("Sadly I can't help you with that. Try contacting First Line Support my friend")
+                furhat.say {
+                    random {
+                        +"Sadly I can't help you with that. Try contacting First Line Support my friend"
+                        +"Oh I am so sorry! Unfortunately we can only book rooms up to 24 hours in advance! You will need to contact first line support for that"
+                        +"My bad human! If you want to book a room more than 24 hours in advance you will need to contact First Line Support! You can find their contact right under my nose"
+                    }
+                }
                 goto(Idle)
             }
         }
-        furhat.ask("So tell me please. Do you want a room for today, for tomorrow...?")
+        else {
+            furhat.ask {random{
+                +"So tell me please. Do you want a room for today, for tomorrow...?"
+                +"Beautiful, and for what date would you like to book this room?"
+                +"In which date would you like to book the room?"
+            }}
+        }
     }
     onResponse<Date> {
         bookingData.date = it.intent.asLocalDate()
+        reentry()
+    }
+    onResponse {
+        furhat.say{
+            random{
+                +	"	No clue what you said human. Please repeat	"
+                +	"	Sorry human, I didn't catch what you said. Could you repeat it?	"
+                +	"	I must have some wax in my ears. Could you repeat that for me?	"
+            }
+        }
         reentry()
     }
 

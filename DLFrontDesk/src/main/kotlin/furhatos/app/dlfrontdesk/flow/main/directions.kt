@@ -2,11 +2,14 @@ package furhatos.app.dlfrontdesk.flow.main
 
 import furhatos.app.dlfrontdesk.enu.Room
 import furhatos.app.dlfrontdesk.flow.Parent
-import furhatos.app.dlfrontdesk.nlu.Navigation
+import furhatos.app.dlfrontdesk.flow.main.booking.Bye
+import furhatos.autobehavior.setDefaultMicroexpression
 import furhatos.flow.kotlin.*
 
 fun Directions(room : Room?): State = state(Parent) {
     onEntry {
+        furhat.setDefaultMicroexpression(blinking = true, facialMovements = true, eyeMovements = true)
+
         when (room?.value.toString()){
             "ideate" -> {
                 furhat.say {
@@ -61,6 +64,7 @@ fun Directions(room : Room?): State = state(Parent) {
                         +"Just go downstairs using the stairway behind you, Invite is the last room in the left side of the hallway"
                     }
                 }
+
             }
             "connect"-> {
                 furhat.say {
@@ -174,7 +178,7 @@ fun Directions(room : Room?): State = state(Parent) {
 
         }
 
-        goto(Idle)
+        goto(Bye)
     }
 
 

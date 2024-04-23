@@ -1,12 +1,12 @@
 package furhatos.app.dlfrontdesk.utils
 
 import com.sun.org.apache.xpath.internal.operations.Bool
+import furhatos.records.User
 import java.time.LocalDate
 import java.time.LocalTime
 import java.time.Period
 
-class BookingData(var date: LocalDate? = null, var from: LocalTime? = null, var to: LocalTime? = null, var room_name: String? = null, var nb_people : Int? = null) {
-    var bookable_rooms = arrayOf("play", "invite", "connect")
+class BookingData(var date: LocalDate? = null, var from: LocalTime? = null, var to: LocalTime? = null, var room_name: String? = null, var nb_people : Int? = null, var user_id: String? = null) {
 
     fun date_provided() : Boolean{
         return date != null
@@ -23,6 +23,28 @@ class BookingData(var date: LocalDate? = null, var from: LocalTime? = null, var 
     fun bookable_date() : Boolean{
         val period = Period.between(date, LocalDate.now().plusDays(1))
         return !period.isNegative && period.days <= 1
+    }
+
+    fun number_to_time(t : Int) : LocalTime{
+        var h : Int = 0
+        var m : Int = 0
+        if (24 <= t && t < 100){
+            h = t % 24
+        }
+        else if (t >= 100){
+            h = t / 100
+            m = t % 100
+        }
+        else{
+            h = t
+            m = 0
+        }
+
+        m %= 60
+        if (h < 8){
+            h += 12
+        }
+        return (LocalTime.of(h, m))
     }
 
     fun valid_from_time() : Boolean{
@@ -45,14 +67,24 @@ class BookingData(var date: LocalDate? = null, var from: LocalTime? = null, var 
     }
 
     fun find_fiting_room(){
-        room_name = "play"
+        if (nb_people!! < 8){
+            room_name = "play"
+        }
+        else if (nb_people!! < 15){
+            room_name = "invite"
+        }
+        else{
+            room_name = "connect"
+        }
+
     }
 
     fun bookable_room() : Boolean{
-        return room_name == "play" || room_name == "connect" || room_name == "invite"
+        return room_name == "play" || room_name == "connect" || room_name == "invite" || room_name == "d-workshop"
     }
 
     fun room_available() : Boolean{
+
         return true
     }
 
