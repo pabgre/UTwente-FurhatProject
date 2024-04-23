@@ -2,6 +2,7 @@ package furhatos.app.dlfrontdesk.flow.main.booking
 
 import furhatos.app.dlfrontdesk.enu.Room
 import furhatos.app.dlfrontdesk.flow.Parent
+import furhatos.app.dlfrontdesk.flow.main.Idle
 import furhatos.app.dlfrontdesk.utils.BookingData
 import furhatos.flow.kotlin.*
 import furhatos.nlu.common.No
@@ -22,10 +23,12 @@ fun RoomName(bookingData: BookingData): State = state(Parent) {
             }}}
             else{
                 if (bookingData.room_name == "toilet"){
-                    furhat.ask{ random{
-                        +	"	Really? What are you planning to there? Don't tell me... please	"
+                    furhat.say{ random{
+                        +	"	Gross... What are you planning to do there? Don't tell me... please	"
                         +	"	Okay... I won't ask any questions...	"
+                        +   "We can't rent out that room but it is better to shit in your own sink, than sinking in your own shit"
                     }}
+                    goto(Idle)
                 }
                 else{
                     furhat.ask{ random{

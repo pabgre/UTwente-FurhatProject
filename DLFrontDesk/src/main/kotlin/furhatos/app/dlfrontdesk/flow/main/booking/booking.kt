@@ -14,12 +14,22 @@ import java.util.*
 
 fun Booking(bookingData: BookingData): State = state(Parent) {
     onEntry {
+        if (bookingData.room_name == "toilet"){
+            furhat.say{ random{
+                +	"	Gross... What are you planning to do there? Don't tell me... please	"
+                +	"	Okay... I won't ask any questions...	"
+                + "We can't rent out that room but it is better to shit in your own sink, than sinking in your own shit"
+            }}
+            goto(Idle)
+        }
         furhat.say{ random{
             +"Looks like you want to book a room"
             +"So you'd like to book a room then"
             +"You want to book a room, did I catch that"
             +"Just to double check, you want to book a room"
         }}
+
+
         if (bookingData.date_provided()){
             goto(AskForDate(bookingData))
         }
