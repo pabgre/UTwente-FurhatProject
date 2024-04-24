@@ -1,10 +1,7 @@
 I want to book @room
-I want to book @room for @duration @durationscale
 Can I book @room @date
 can I book @room
 I want a room from @from to @to
-I want a room from @from for @duration @durationscale
-I want to book a room for @activity from @from for @duration @durationscale
 Could you please reserve @room for me?
 I would like to make a room booking.
 I would like to book @room.
@@ -14,8 +11,6 @@ I would like to do @activity, is there a room i could reserve?
 Do you have any rooms available for booking?
 Do you have any rooms available?
 We are wondering if we could @activity here.
-I would like a quiet room for @activity for @duration @durationscale
-I would like a quiet room for @activity call for @duration @durationscale
 Could you help me arrange a room for @activity?
 I would like to book a room for @activity
 Can you help me book @room?
@@ -36,3 +31,7 @@ I would like to reserve @room on @date.
 I was wondering if it is possible to book/reserve @room for @date
 I would like to book/reserve @room for @date
 i need to book @room
+I would like to book a room for @people people
+I need a room for @duration @durationscale
+I would like to book a room for @duration @durationscale
+I need a room for @people people

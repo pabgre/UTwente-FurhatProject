@@ -9,11 +9,11 @@ play: play
 m-workshop: m-workshop, m Whorkshop
 e-workshop: e workshop
 t-workshop: t workshop
-d-workshop: d-workshop, D Workshop, the workshop
-techteam-desk: techteam, technician
+d-workshop: d-workshop, D Workshop, the workshop, camera room
+techteam-desk: techteam, technician, screws, 3d printing, tools
 entrance
 exit
-kitchen
+kitchen: coffee, food, kitchen
 lounge
 toilet
 a room

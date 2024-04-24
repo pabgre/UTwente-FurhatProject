@@ -1,0 +1,650 @@
+{
+  "class": "furhatos.gestures.Gesture",
+  "_comment": "frameLength = 50  timePadding = 0 articulationMod = 1.0 speedMod = 1.0  file = MySlate_18_iPhone_raw",
+  "defaultPriority": 0,
+  "name": "8.AFFIRMATION-1",
+  "frames": [
+    {
+      "time": [
+        0.0
+      ],
+      "params": {
+        "EYE_LOOK_IN_LEFT": 0.09,
+        "EYE_LOOK_IN_RIGHT": 0.03,
+        "EYE_SQUINT_LEFT": 0.11,
+        "EYE_SQUINT_RIGHT": 0.11,
+        "BROW_DOWN_LEFT": 0.17,
+        "BROW_DOWN_RIGHT": 0.17,
+        "MOUTH_SMILE_LEFT": 0.03,
+        "MOUTH_SMILE_RIGHT": 0.05,
+        "JAW_FORWARD": 0.02,
+        "MOUTH_PUCKER": 0.03,
+        "MOUTH_DIMPLE_LEFT": 0.03,
+        "MOUTH_DIMPLE_RIGHT": 0.03,
+        "MOUTH_STRETCH_LEFT": 0.03,
+        "MOUTH_STRETCH_RIGHT": 0.04,
+        "MOUTH_LOWER_DOWN_LEFT": 0.02,
+        "MOUTH_LOWER_DOWN_RIGHT": 0.02,
+        "MOUTH_PRESS_LEFT": 0.07,
+        "MOUTH_PRESS_RIGHT": 0.06,
+        "MOUTH_ROLL_UPPER": 0.02,
+        "MOUTH_ROLL_LOWER": 0.04,
+        "MOUTH_SHRUG_UPPER": 0.08,
+        "MOUTH_SHRUG_LOWER": 0.12,
+        "NECK_PAN": -0.4,
+        "NECK_TILT": 7.8
+      }
+    },
+    {
+      "time": [
+        0.067
+      ],
+      "params": {
+        "BROW_DOWN_LEFT": 0.14,
+        "BROW_DOWN_RIGHT": 0.14
+      }
+    },
+    {
+      "time": [
+        0.134
+      ],
+      "params": {
+        "BROW_DOWN_LEFT": 0.12,
+        "BROW_DOWN_RIGHT": 0.12,
+        "NECK_ROLL": -0.8
+      }
+    },
+    {
+      "time": [
+        0.201
+      ],
+      "params": {
+        "CHEEK_SQUINT_RIGHT": 0.04
+      }
+    },
+    {
+      "time": [
+        0.267
+      ],
+      "params": {
+        "BROW_DOWN_LEFT": 0.08,
+        "BROW_DOWN_RIGHT": 0.08
+      }
+    },
+    {
+      "time": [
+        0.334
+      ],
+      "params": {
+        "EYE_BLINK_LEFT": 0.08,
+        "EYE_BLINK_RIGHT": 0.08,
+        "EYE_SQUINT_LEFT": 0.07,
+        "EYE_SQUINT_RIGHT": 0.07,
+        "BROW_INNER_UP": 0.1,
+        "BROW_OUTER_UP_LEFT": 0.01,
+        "BROW_OUTER_UP_RIGHT": 0.01,
+        "BROW_DOWN_LEFT": 0.0,
+        "BROW_DOWN_RIGHT": 0.0,
+        "JAW_FORWARD": 0.02,
+        "MOUTH_PUCKER": 0.03,
+        "MOUTH_STRETCH_LEFT": 0.03,
+        "MOUTH_STRETCH_RIGHT": 0.03,
+        "MOUTH_LOWER_DOWN_LEFT": 0.02,
+        "MOUTH_LOWER_DOWN_RIGHT": 0.02,
+        "MOUTH_ROLL_UPPER": 0.03,
+        "MOUTH_ROLL_LOWER": 0.04
+      }
+    },
+    {
+      "time": [
+        0.401
+      ],
+      "params": {
+        "EYE_BLINK_LEFT": 0.0,
+        "EYE_BLINK_RIGHT": 0.0,
+        "EYE_WIDE_LEFT": 0.05,
+        "EYE_WIDE_RIGHT": 0.05,
+        "BROW_INNER_UP": 0.7,
+        "BROW_OUTER_UP_LEFT": 0.36,
+        "BROW_OUTER_UP_RIGHT": 0.36,
+        "JAW_FORWARD": 0.1,
+        "MOUTH_PUCKER": 0.08,
+        "MOUTH_DIMPLE_RIGHT": 0.07,
+        "MOUTH_STRETCH_LEFT": 0.1,
+        "MOUTH_STRETCH_RIGHT": 0.11,
+        "MOUTH_LOWER_DOWN_LEFT": 0.07,
+        "MOUTH_LOWER_DOWN_RIGHT": 0.07,
+        "MOUTH_ROLL_UPPER": 0.09,
+        "MOUTH_ROLL_LOWER": 0.17
+      }
+    },
+    {
+      "time": [
+        0.468
+      ],
+      "params": {
+        "EYE_WIDE_LEFT": 0.17,
+        "EYE_WIDE_RIGHT": 0.17,
+        "BROW_INNER_UP": 0.78,
+        "BROW_OUTER_UP_LEFT": 0.52,
+        "BROW_OUTER_UP_RIGHT": 0.52,
+        "MOUTH_DIMPLE_LEFT": 0.06,
+        "MOUTH_PRESS_RIGHT": 0.09,
+        "MOUTH_ROLL_LOWER": 0.19,
+        "NECK_PAN": 0.5,
+        "NECK_TILT": 7.4
+      }
+    },
+    {
+      "time": [
+        0.534
+      ],
+      "params": {
+        "EYE_WIDE_LEFT": 0.16,
+        "EYE_WIDE_RIGHT": 0.16,
+        "MOUTH_PRESS_LEFT": 0.1,
+        "MOUTH_ROLL_LOWER": 0.24,
+        "NECK_ROLL": 0.1,
+        "NECK_PAN": 1.0,
+        "NECK_TILT": 6.6
+      }
+    },
+    {
+      "time": [
+        0.585
+      ],
+      "params": {
+        "EYE_LOOK_DOWN_LEFT": 0.18,
+        "EYE_LOOK_DOWN_RIGHT": 0.18,
+        "EYE_WIDE_LEFT": 0.11,
+        "EYE_WIDE_RIGHT": 0.11,
+        "NECK_TILT": 5.6
+      }
+    },
+    {
+      "time": [
+        0.651
+      ],
+      "params": {
+        "MOUTH_DIMPLE_LEFT": 0.09,
+        "MOUTH_DIMPLE_RIGHT": 0.11,
+        "MOUTH_ROLL_UPPER": 0.13,
+        "MOUTH_SHRUG_LOWER": 0.16
+      }
+    },
+    {
+      "time": [
+        0.718
+      ],
+      "params": {
+        "EYE_WIDE_LEFT": 0.08,
+        "EYE_WIDE_RIGHT": 0.08,
+        "MOUTH_SMILE_RIGHT": 0.09,
+        "MOUTH_PRESS_LEFT": 0.14,
+        "MOUTH_PRESS_RIGHT": 0.13,
+        "MOUTH_SHRUG_LOWER": 0.18,
+        "NECK_TILT": 5.9
+      }
+    },
+    {
+      "time": [
+        0.785
+      ],
+      "params": {
+        "EYE_LOOK_IN_LEFT": 0.12,
+        "EYE_LOOK_DOWN_LEFT": 0.17,
+        "EYE_LOOK_DOWN_RIGHT": 0.17,
+        "EYE_WIDE_LEFT": 0.05,
+        "EYE_WIDE_RIGHT": 0.05,
+        "MOUTH_SMILE_LEFT": 0.06,
+        "MOUTH_DIMPLE_LEFT": 0.12,
+        "MOUTH_DIMPLE_RIGHT": 0.15,
+        "MOUTH_PRESS_LEFT": 0.15,
+        "MOUTH_PRESS_RIGHT": 0.14,
+        "MOUTH_SHRUG_LOWER": 0.2,
+        "NECK_TILT": 6.7
+      }
+    },
+    {
+      "time": [
+        0.852
+      ],
+      "params": {
+        "EYE_LOOK_DOWN_LEFT": 0.27,
+        "EYE_LOOK_DOWN_RIGHT": 0.27,
+        "EYE_SQUINT_LEFT": 0.04,
+        "EYE_SQUINT_RIGHT": 0.04,
+        "EYE_WIDE_LEFT": 0.03,
+        "EYE_WIDE_RIGHT": 0.03,
+        "BROW_OUTER_UP_LEFT": 0.51,
+        "BROW_OUTER_UP_RIGHT": 0.51,
+        "MOUTH_SMILE_LEFT": 0.1,
+        "MOUTH_DIMPLE_RIGHT": 0.18,
+        "MOUTH_PRESS_LEFT": 0.21,
+        "MOUTH_PRESS_RIGHT": 0.2,
+        "MOUTH_ROLL_UPPER": 0.1,
+        "MOUTH_ROLL_LOWER": 0.23,
+        "MOUTH_SHRUG_UPPER": 0.12,
+        "MOUTH_SHRUG_LOWER": 0.25,
+        "NECK_ROLL": 0.7,
+        "NECK_TILT": 3.9
+      }
+    },
+    {
+      "time": [
+        0.918
+      ],
+      "params": {
+        "EYE_BLINK_LEFT": 0.02,
+        "EYE_BLINK_RIGHT": 0.02,
+        "EYE_LOOK_DOWN_LEFT": 0.39,
+        "EYE_LOOK_DOWN_RIGHT": 0.39,
+        "BROW_OUTER_UP_LEFT": 0.44,
+        "BROW_OUTER_UP_RIGHT": 0.44,
+        "MOUTH_SMILE_LEFT": 0.1,
+        "MOUTH_SMILE_RIGHT": 0.13,
+        "JAW_FORWARD": 0.08,
+        "MOUTH_DIMPLE_RIGHT": 0.11,
+        "MOUTH_ROLL_UPPER": 0.06,
+        "MOUTH_ROLL_LOWER": 0.12,
+        "NECK_ROLL": 2.2,
+        "NECK_TILT": -3.1
+      }
+    },
+    {
+      "time": [
+        0.985
+      ],
+      "params": {
+        "EYE_BLINK_LEFT": 0.09,
+        "EYE_BLINK_RIGHT": 0.09,
+        "BROW_INNER_UP": 0.76,
+        "BROW_OUTER_UP_LEFT": 0.39,
+        "BROW_OUTER_UP_RIGHT": 0.39,
+        "MOUTH_SMILE_LEFT": 0.15,
+        "MOUTH_SMILE_RIGHT": 0.17,
+        "MOUTH_DIMPLE_LEFT": 0.1,
+        "MOUTH_DIMPLE_RIGHT": 0.11,
+        "NECK_ROLL": 3.9,
+        "NECK_TILT": -6.6
+      }
+    },
+    {
+      "time": [
+        1.052
+      ],
+      "params": {
+        "EYE_LOOK_DOWN_LEFT": 0.4,
+        "EYE_LOOK_DOWN_RIGHT": 0.4,
+        "BROW_INNER_UP": 0.65,
+        "BROW_OUTER_UP_LEFT": 0.28,
+        "BROW_OUTER_UP_RIGHT": 0.28,
+        "MOUTH_SMILE_LEFT": 0.29,
+        "MOUTH_SMILE_RIGHT": 0.31,
+        "MOUTH_DIMPLE_LEFT": 0.18,
+        "MOUTH_DIMPLE_RIGHT": 0.2,
+        "MOUTH_SHRUG_UPPER": 0.16,
+        "MOUTH_SHRUG_LOWER": 0.28,
+        "NECK_ROLL": 5.2,
+        "NECK_TILT": -5.2
+      }
+    },
+    {
+      "time": [
+        1.119
+      ],
+      "params": {
+        "EYE_LOOK_DOWN_LEFT": 0.3,
+        "EYE_LOOK_DOWN_RIGHT": 0.3,
+        "BROW_INNER_UP": 0.41,
+        "BROW_OUTER_UP_LEFT": 0.15,
+        "BROW_OUTER_UP_RIGHT": 0.16,
+        "MOUTH_SMILE_LEFT": 0.32,
+        "MOUTH_SMILE_RIGHT": 0.34,
+        "JAW_FORWARD": 0.05,
+        "MOUTH_DIMPLE_LEFT": 0.25,
+        "MOUTH_DIMPLE_RIGHT": 0.28,
+        "MOUTH_ROLL_UPPER": 0.05,
+        "MOUTH_ROLL_LOWER": 0.12,
+        "MOUTH_SHRUG_UPPER": 0.25,
+        "MOUTH_SHRUG_LOWER": 0.39,
+        "NECK_TILT": 0.4
+      }
+    },
+    {
+      "time": [
+        1.186
+      ],
+      "params": {
+        "EYE_BLINK_LEFT": 0.11,
+        "EYE_BLINK_RIGHT": 0.11,
+        "EYE_LOOK_DOWN_LEFT": 0.11,
+        "EYE_LOOK_DOWN_RIGHT": 0.11,
+        "EYE_SQUINT_LEFT": 0.05,
+        "EYE_SQUINT_RIGHT": 0.05,
+        "BROW_INNER_UP": 0.15,
+        "BROW_OUTER_UP_LEFT": 0.01,
+        "BROW_OUTER_UP_RIGHT": 0.02,
+        "BROW_DOWN_LEFT": 0.0,
+        "BROW_DOWN_RIGHT": 0.0,
+        "MOUTH_SMILE_LEFT": 0.22,
+        "MOUTH_SMILE_RIGHT": 0.23,
+        "JAW_FORWARD": 0.14,
+        "MOUTH_DIMPLE_LEFT": 0.3,
+        "MOUTH_DIMPLE_RIGHT": 0.34,
+        "MOUTH_ROLL_UPPER": 0.11,
+        "MOUTH_ROLL_LOWER": 0.24,
+        "MOUTH_SHRUG_LOWER": 0.43,
+        "NECK_PAN": 1.9,
+        "NECK_TILT": 7.1
+      }
+    },
+    {
+      "time": [
+        1.252
+      ],
+      "params": {
+        "EYE_BLINK_LEFT": 0.04,
+        "EYE_BLINK_RIGHT": 0.04,
+        "EYE_LOOK_IN_LEFT": 0.08,
+        "EYE_LOOK_DOWN_LEFT": 0.04,
+        "EYE_LOOK_DOWN_RIGHT": 0.04,
+        "EYE_SQUINT_LEFT": 0.09,
+        "EYE_SQUINT_RIGHT": 0.09,
+        "BROW_DOWN_LEFT": 0.05,
+        "BROW_DOWN_RIGHT": 0.05,
+        "JAW_FORWARD": 0.09,
+        "MOUTH_DIMPLE_LEFT": 0.21,
+        "MOUTH_DIMPLE_RIGHT": 0.24,
+        "MOUTH_PRESS_RIGHT": 0.2,
+        "MOUTH_ROLL_LOWER": 0.16,
+        "MOUTH_SHRUG_UPPER": 0.29,
+        "MOUTH_SHRUG_LOWER": 0.46,
+        "NECK_TILT": 13.0
+      }
+    },
+    {
+      "time": [
+        1.319
+      ],
+      "params": {
+        "EYE_LOOK_DOWN_LEFT": 0.03,
+        "EYE_LOOK_DOWN_RIGHT": 0.03,
+        "MOUTH_DIMPLE_LEFT": 0.27,
+        "MOUTH_DIMPLE_RIGHT": 0.31,
+        "MOUTH_PRESS_RIGHT": 0.25,
+        "MOUTH_ROLL_LOWER": 0.19,
+        "MOUTH_SHRUG_UPPER": 0.3,
+        "MOUTH_SHRUG_LOWER": 0.48,
+        "NECK_TILT": 15.2
+      }
+    },
+    {
+      "time": [
+        1.386
+      ],
+      "params": {
+        "EYE_BLINK_LEFT": 0.07,
+        "EYE_BLINK_RIGHT": 0.07,
+        "EYE_LOOK_DOWN_LEFT": 0.12,
+        "EYE_LOOK_DOWN_RIGHT": 0.12,
+        "MOUTH_SMILE_LEFT": 0.25,
+        "MOUTH_SMILE_RIGHT": 0.27,
+        "MOUTH_DIMPLE_LEFT": 0.34,
+        "MOUTH_DIMPLE_RIGHT": 0.38,
+        "MOUTH_PRESS_LEFT": 0.25,
+        "MOUTH_ROLL_LOWER": 0.24,
+        "MOUTH_SHRUG_UPPER": 0.24,
+        "MOUTH_SHRUG_LOWER": 0.41,
+        "NECK_TILT": 10.0
+      }
+    },
+    {
+      "time": [
+        1.453
+      ],
+      "params": {
+        "EYE_LOOK_DOWN_LEFT": 0.24,
+        "EYE_LOOK_DOWN_RIGHT": 0.24,
+        "MOUTH_SMILE_LEFT": 0.38,
+        "MOUTH_SMILE_RIGHT": 0.4,
+        "MOUTH_ROLL_LOWER": 0.15,
+        "MOUTH_SHRUG_UPPER": 0.3,
+        "MOUTH_SHRUG_LOWER": 0.44,
+        "NECK_TILT": 5.2
+      }
+    },
+    {
+      "time": [
+        1.519
+      ],
+      "params": {
+        "BROW_INNER_UP": 0.12,
+        "MOUTH_SMILE_LEFT": 0.43,
+        "MOUTH_SMILE_RIGHT": 0.44,
+        "MOUTH_SHRUG_UPPER": 0.22,
+        "MOUTH_SHRUG_LOWER": 0.36,
+        "NECK_TILT": 3.5
+      }
+    },
+    {
+      "time": [
+        1.586
+      ],
+      "params": {
+        "EYE_LOOK_DOWN_LEFT": 0.2,
+        "EYE_LOOK_DOWN_RIGHT": 0.2,
+        "MOUTH_SMILE_LEFT": 0.35,
+        "MOUTH_SMILE_RIGHT": 0.35,
+        "MOUTH_ROLL_LOWER": 0.17,
+        "MOUTH_SHRUG_UPPER": 0.29,
+        "MOUTH_SHRUG_LOWER": 0.45,
+        "NECK_TILT": 5.0
+      }
+    },
+    {
+      "time": [
+        1.653
+      ],
+      "params": {
+        "EYE_LOOK_DOWN_LEFT": 0.07,
+        "EYE_LOOK_DOWN_RIGHT": 0.07,
+        "MOUTH_SMILE_LEFT": 0.22,
+        "MOUTH_SMILE_RIGHT": 0.25,
+        "MOUTH_PRESS_LEFT": 0.26,
+        "MOUTH_PRESS_RIGHT": 0.26,
+        "MOUTH_ROLL_LOWER": 0.22,
+        "MOUTH_SHRUG_LOWER": 0.47,
+        "NECK_PAN": 1.1,
+        "NECK_TILT": 9.7
+      }
+    },
+    {
+      "time": [
+        1.72
+      ],
+      "params": {
+        "EYE_LOOK_DOWN_LEFT": 0.07,
+        "EYE_LOOK_DOWN_RIGHT": 0.07,
+        "JAW_FORWARD": 0.12,
+        "MOUTH_PRESS_LEFT": 0.31,
+        "MOUTH_PRESS_RIGHT": 0.31,
+        "NECK_ROLL": 4.5,
+        "NECK_TILT": 11.8
+      }
+    },
+    {
+      "time": [
+        1.786
+      ],
+      "params": {
+        "EYE_LOOK_DOWN_LEFT": 0.15,
+        "EYE_LOOK_DOWN_RIGHT": 0.15,
+        "MOUTH_PRESS_LEFT": 0.33,
+        "MOUTH_PRESS_RIGHT": 0.33,
+        "NECK_ROLL": 3.7,
+        "NECK_TILT": 8.6
+      }
+    },
+    {
+      "time": [
+        1.837
+      ],
+      "params": {
+        "EYE_BLINK_LEFT": 0.09,
+        "EYE_BLINK_RIGHT": 0.09,
+        "EYE_LOOK_DOWN_LEFT": 0.21,
+        "EYE_LOOK_DOWN_RIGHT": 0.21,
+        "MOUTH_SMILE_LEFT": 0.25,
+        "MOUTH_SMILE_RIGHT": 0.27,
+        "MOUTH_PRESS_LEFT": 0.39,
+        "MOUTH_PRESS_RIGHT": 0.38,
+        "MOUTH_SHRUG_LOWER": 0.44,
+        "NECK_TILT": 5.8
+      }
+    },
+    {
+      "time": [
+        1.903
+      ],
+      "params": {
+        "EYE_LOOK_DOWN_LEFT": 0.26,
+        "EYE_LOOK_DOWN_RIGHT": 0.26,
+        "BROW_DOWN_LEFT": 0.09,
+        "BROW_DOWN_RIGHT": 0.09,
+        "MOUTH_SMILE_LEFT": 0.29,
+        "MOUTH_SMILE_RIGHT": 0.31,
+        "MOUTH_PRESS_LEFT": 0.34,
+        "MOUTH_PRESS_RIGHT": 0.34,
+        "MOUTH_ROLL_LOWER": 0.18,
+        "MOUTH_SHRUG_UPPER": 0.28,
+        "MOUTH_SHRUG_LOWER": 0.42,
+        "NECK_ROLL": 3.2,
+        "NECK_PAN": 0.6,
+        "NECK_TILT": 3.4
+      }
+    },
+    {
+      "time": [
+        1.97
+      ],
+      "params": {
+        "BROW_DOWN_LEFT": 0.1,
+        "MOUTH_SMILE_LEFT": 0.34,
+        "MOUTH_PRESS_RIGHT": 0.29,
+        "MOUTH_SHRUG_UPPER": 0.23,
+        "MOUTH_SHRUG_LOWER": 0.36,
+        "NECK_ROLL": 2.5
+      }
+    },
+    {
+      "time": [
+        2.037
+      ],
+      "params": {
+        "EYE_LOOK_DOWN_LEFT": 0.22,
+        "EYE_LOOK_DOWN_RIGHT": 0.22,
+        "BROW_INNER_UP": 0.08,
+        "BROW_DOWN_LEFT": 0.14,
+        "BROW_DOWN_RIGHT": 0.13,
+        "MOUTH_SMILE_LEFT": 0.31,
+        "MOUTH_DIMPLE_RIGHT": 0.35,
+        "MOUTH_PRESS_RIGHT": 0.3,
+        "MOUTH_SHRUG_UPPER": 0.27,
+        "MOUTH_SHRUG_LOWER": 0.41,
+        "NECK_ROLL": 1.7,
+        "NECK_PAN": -0.1,
+        "NECK_TILT": 4.3
+      }
+    },
+    {
+      "time": [
+        2.104
+      ],
+      "params": {
+        "EYE_LOOK_IN_LEFT": 0.05,
+        "EYE_LOOK_IN_RIGHT": 0.07,
+        "EYE_LOOK_DOWN_LEFT": 0.19,
+        "EYE_LOOK_DOWN_RIGHT": 0.19,
+        "EYE_SQUINT_LEFT": 0.1,
+        "EYE_SQUINT_RIGHT": 0.1,
+        "BROW_DOWN_LEFT": 0.17,
+        "BROW_DOWN_RIGHT": 0.17,
+        "MOUTH_SMILE_LEFT": 0.27,
+        "MOUTH_SMILE_RIGHT": 0.29,
+        "MOUTH_DIMPLE_LEFT": 0.3,
+        "MOUTH_PRESS_LEFT": 0.35,
+        "MOUTH_PRESS_RIGHT": 0.35,
+        "MOUTH_SHRUG_UPPER": 0.31,
+        "MOUTH_SHRUG_LOWER": 0.46,
+        "CHEEK_SQUINT_RIGHT": 0.07,
+        "NECK_ROLL": 0.9,
+        "NECK_PAN": -1.6,
+        "NECK_TILT": 6.7
+      }
+    },
+    {
+      "time": [
+        2.17
+      ],
+      "params": {
+        "EYE_LOOK_IN_LEFT": 0.0,
+        "EYE_LOOK_IN_RIGHT": 0.13,
+        "EYE_LOOK_DOWN_LEFT": 0.14,
+        "EYE_LOOK_DOWN_RIGHT": 0.14,
+        "EYE_SQUINT_LEFT": 0.15,
+        "EYE_SQUINT_RIGHT": 0.15,
+        "BROW_DOWN_LEFT": 0.28,
+        "BROW_DOWN_RIGHT": 0.28,
+        "MOUTH_SMILE_LEFT": 0.16,
+        "MOUTH_SMILE_RIGHT": 0.2,
+        "MOUTH_DIMPLE_RIGHT": 0.31,
+        "MOUTH_PRESS_LEFT": 0.49,
+        "MOUTH_PRESS_RIGHT": 0.49,
+        "MOUTH_ROLL_UPPER": 0.07,
+        "MOUTH_SHRUG_UPPER": 0.38,
+        "MOUTH_SHRUG_LOWER": 0.52,
+        "NECK_ROLL": -0.3,
+        "NECK_PAN": -4.8,
+        "NECK_TILT": 9.0
+      }
+    },
+    {
+      "time": [
+        2.237
+      ],
+      "params": {
+        "BROW_DOWN_LEFT": 0.24,
+        "BROW_DOWN_RIGHT": 0.24,
+        "MOUTH_SMILE_LEFT": 0.23,
+        "MOUTH_SMILE_RIGHT": 0.26,
+        "MOUTH_PRESS_LEFT": 0.41,
+        "MOUTH_PRESS_RIGHT": 0.42,
+        "NECK_ROLL": -1.0,
+        "NECK_PAN": -6.2
+      }
+    },
+    {
+      "time": [
+        2.304
+      ],
+      "params": {
+        "BROW_DOWN_LEFT": 0.2,
+        "BROW_DOWN_RIGHT": 0.2,
+        "MOUTH_SMILE_LEFT": 0.28,
+        "MOUTH_SMILE_RIGHT": 0.32,
+        "MOUTH_PRESS_LEFT": 0.34,
+        "MOUTH_PRESS_RIGHT": 0.35,
+        "NECK_ROLL": -1.8
+      }
+    },
+    {
+      "time": [
+        2.921
+      ],
+      "params": {
+        "reset": true
+      }
+    }
+  ]
+}

@@ -5,6 +5,7 @@ import furhatos.app.dlfrontdesk.flow.main.booking.Booking
 import furhatos.app.dlfrontdesk.nlu.Booking
 import furhatos.app.dlfrontdesk.nlu.Navigation
 import furhatos.app.dlfrontdesk.utils.BookingData
+import furhatos.app.dlfrontdesk.utils.CustomGestures
 import furhatos.autobehavior.setDefaultMicroexpression
 import furhatos.event.actions.ActionGaze
 import furhatos.flow.kotlin.*
@@ -13,6 +14,7 @@ import furhatos.records.Location
 import java.time.Duration
 import java.time.LocalDate
 import java.time.LocalTime
+
 
 val Greeting: State = state(Parent) {
     onEntry {

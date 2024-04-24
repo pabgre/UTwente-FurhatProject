@@ -39,13 +39,14 @@ fun AskForDate(bookingData: BookingData): State = state(Parent) {
         reentry()
     }
     onResponse {
-        furhat.say{
+        furhat.say(async = true){
             random{
                 +	"	No clue what you said human. Please repeat	"
                 +	"	Sorry human, I didn't catch what you said. Could you repeat it?	"
                 +	"	I must have some wax in my ears. Could you repeat that for me?	"
             }
         }
+
         reentry()
     }
 

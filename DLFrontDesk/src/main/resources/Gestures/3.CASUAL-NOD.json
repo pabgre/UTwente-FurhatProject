@@ -1,0 +1,160 @@
+{
+  "class": "furhatos.gestures.Gesture",
+  "_comment": "frameLength = 50  timePadding = 0 articulationMod = 1.0 speedMod = 1.0  file = MySlate_13_iPhone_raw",
+  "defaultPriority": 0,
+  "name": "3.CASUAL-NOD",
+  "frames": [
+    {
+      "time": [
+        0.0
+      ],
+      "params": {
+        "EYE_BLINK_LEFT": 0.11,
+        "EYE_BLINK_RIGHT": 0.11,
+        "NECK_ROLL": -1.4,
+        "NECK_PAN": -1.0,
+        "NECK_TILT": 4.8
+      }
+    },
+    {
+      "time": [
+        0.067
+      ],
+      "params": {
+        "NECK_TILT": 5.3
+      }
+    },
+    {
+      "time": [
+        0.201
+      ],
+      "params": {
+        "EYE_LOOK_DOWN_LEFT": 0.16,
+        "EYE_LOOK_DOWN_RIGHT": 0.16
+      }
+    },
+    {
+      "time": [
+        0.267
+      ],
+      "params": {
+        "NECK_TILT": 6.3
+      }
+    },
+    {
+      "time": [
+        0.468
+      ],
+      "params": {
+        "NECK_TILT": 7.3
+      }
+    },
+    {
+      "time": [
+        0.651
+      ],
+      "params": {
+        "EYE_LOOK_DOWN_LEFT": 0.12
+      }
+    },
+    {
+      "time": [
+        0.718
+      ],
+      "params": {
+        "NECK_TILT": 7.8
+      }
+    },
+    {
+      "time": [
+        0.785
+      ],
+      "params": {
+        "EYE_LOOK_DOWN_LEFT": 0.16,
+        "EYE_LOOK_DOWN_RIGHT": 0.16,
+        "BROW_DOWN_LEFT": 0.07,
+        "BROW_DOWN_RIGHT": 0.07,
+        "NECK_TILT": 5.9
+      }
+    },
+    {
+      "time": [
+        0.852
+      ],
+      "params": {
+        "EYE_LOOK_DOWN_LEFT": 0.25,
+        "EYE_LOOK_DOWN_RIGHT": 0.26,
+        "BROW_DOWN_LEFT": 0.03,
+        "BROW_DOWN_RIGHT": 0.03,
+        "NECK_PAN": -0.1,
+        "NECK_TILT": 2.1
+      }
+    },
+    {
+      "time": [
+        0.918
+      ],
+      "params": {
+        "NECK_TILT": 0.1
+      }
+    },
+    {
+      "time": [
+        0.969
+      ],
+      "params": {
+        "BROW_DOWN_LEFT": 0.06,
+        "BROW_DOWN_RIGHT": 0.06,
+        "NECK_TILT": -0.0
+      }
+    },
+    {
+      "time": [
+        1.035
+      ],
+      "params": {
+        "EYE_LOOK_DOWN_LEFT": 0.25,
+        "EYE_LOOK_DOWN_RIGHT": 0.25,
+        "BROW_DOWN_LEFT": 0.09,
+        "BROW_DOWN_RIGHT": 0.09,
+        "NECK_TILT": 1.2
+      }
+    },
+    {
+      "time": [
+        1.102
+      ],
+      "params": {
+        "EYE_LOOK_DOWN_LEFT": 0.21,
+        "EYE_LOOK_DOWN_RIGHT": 0.21,
+        "NECK_TILT": 2.9
+      }
+    },
+    {
+      "time": [
+        1.169
+      ],
+      "params": {
+        "EYE_LOOK_DOWN_LEFT": 0.19,
+        "EYE_LOOK_DOWN_RIGHT": 0.19,
+        "NECK_TILT": 4.9
+      }
+    },
+    {
+      "time": [
+        1.236
+      ],
+      "params": {
+        "NECK_TILT": 6.0
+      }
+    },
+    {
+      "time": [
+        2.303
+      ],
+      "params": {
+        "reset": true
+      }
+    }
+  ]
+}

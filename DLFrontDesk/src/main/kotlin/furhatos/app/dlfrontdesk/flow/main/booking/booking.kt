@@ -5,7 +5,9 @@ import furhatos.app.dlfrontdesk.flow.Parent
 import furhatos.app.dlfrontdesk.flow.main.Greeting
 import furhatos.app.dlfrontdesk.flow.main.Idle
 import furhatos.app.dlfrontdesk.nlu.Navigation
+import furhatos.app.dlfrontdesk.utils.ANIMATIONS
 import furhatos.app.dlfrontdesk.utils.BookingData
+import furhatos.app.dlfrontdesk.utils.CustomGestures
 import furhatos.flow.kotlin.*
 import furhatos.nlu.common.Time
 import furhatos.nlu.common.Yes
@@ -15,13 +17,15 @@ import java.util.*
 fun Booking(bookingData: BookingData): State = state(Parent) {
     onEntry {
         if (bookingData.room_name == "toilet"){
-            furhat.say{ random{
-                +	"	Gross... What are you planning to do there? Don't tell me... please	"
-                +	"	Okay... I won't ask any questions...	"
+            furhat.say(async=true){ random{
+                +	"Gross... What are you planning to do there? Don't tell me... please	"
+                +	"Okay... I won't ask any questions..."
                 + "We can't rent out that room but it is better to shit in your own sink, than sinking in your own shit"
             }}
+            furhat.gesture(CustomGestures().get_gesture(ANIMATIONS.Confused2))
             goto(Idle)
         }
+        furhat.gesture(CustomGestures().get_gesture(ANIMATIONS.KindFace))
         furhat.say{ random{
             +"Looks like you want to book a room"
             +"So you'd like to book a room then"

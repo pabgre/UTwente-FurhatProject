@@ -49,13 +49,14 @@ class BookingData(var date: LocalDate? = null, var from: LocalTime? = null, var 
 
     fun valid_from_time() : Boolean{
         val hour : Int? = from?.hour?.toInt()
-        return hour != null && 8 < hour && hour < 20
+
+        return true
     }
 
     fun valid_to_time() : Boolean{
         val hour : Int? = to?.hour?.toInt()
         val from_h : Int? = from?.hour?.toInt()
-        return hour != null  && from_h != null && from_h <= hour && 9 < hour && hour < 21
+        return true
     }
 
     fun room_name_provided() : Boolean{
@@ -85,7 +86,7 @@ class BookingData(var date: LocalDate? = null, var from: LocalTime? = null, var 
 
     fun room_available() : Boolean{
 
-        return true
+        return room_name != "invite"
     }
 
     fun inmediate_booking() : Boolean {
@@ -94,7 +95,7 @@ class BookingData(var date: LocalDate? = null, var from: LocalTime? = null, var 
     }
 
     fun get_from_time(): String{
-        val hour : Int? = from?.hour?.toInt()
+        val hour : Int? = from?.hour?.toInt()!! % 12
         val min : Int? = from?.minute?.toInt()
         var out : String = hour?.toString().toString()
         if (min != 0){
@@ -104,7 +105,7 @@ class BookingData(var date: LocalDate? = null, var from: LocalTime? = null, var 
     }
 
     fun get_to_time(): String{
-        val hour : Int? = to?.hour?.toInt()
+        val hour : Int? = to?.hour?.toInt()!! % 12
         val min : Int? = to?.minute?.toInt()
         var out : String = hour?.toString().toString()
         if (min != 0){
