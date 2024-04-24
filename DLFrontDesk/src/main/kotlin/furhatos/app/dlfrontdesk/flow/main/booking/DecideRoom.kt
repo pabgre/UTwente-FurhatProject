@@ -33,9 +33,9 @@ fun DecideRoom(bookingData: BookingData): State = state(Parent) {
         }else{
             val nb_person = furhat.askFor<Number>("How many people are you expecting?") {
                 onResponse<DontKnow> {
-
-                    furhat.say("You should really know that!", async = true)
                     furhat.gesture(CustomGestures().get_gesture(ANIMATIONS.SideEye))
+                    furhat.say("You should really know that!")
+
                     reentry()
                 }
             }

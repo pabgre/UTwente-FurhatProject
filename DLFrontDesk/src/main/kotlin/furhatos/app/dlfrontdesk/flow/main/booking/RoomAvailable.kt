@@ -58,14 +58,4 @@ fun RoomAvailable(bookingData: BookingData): State = state(Parent) {
         }
     }
 
-    onResponse {
-        furhat.say(async = true){ random{
-            +	"	No clue what you said. I will assume it's a no.	"
-            +	"	I did not catch that. So I will take it as a no!	"
-            +	"	Couldn't hear what you said. So I'll take it as a no	"
-        }}
-        furhat.gesture(CustomGestures().get_gesture(ANIMATIONS.Confused2))
-        goto(Bye)
-    }
-
 }

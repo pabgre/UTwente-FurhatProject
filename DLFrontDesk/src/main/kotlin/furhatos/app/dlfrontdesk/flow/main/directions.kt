@@ -24,7 +24,7 @@ fun Directions(room : Room?): State = state(Parent) {
                 }
                 delay(1000)
                 furhat.gesture(CustomGestures().get_gesture(ANIMATIONS.PointLeft), async = false)
-
+                delay(2000)
             }
             "conceptualize"-> {
 
@@ -37,7 +37,7 @@ fun Directions(room : Room?): State = state(Parent) {
                 }
                 delay(1000)
                 furhat.gesture(CustomGestures().get_gesture(ANIMATIONS.PointRight), async = false)
-
+                delay(2000)
             }
             "inspire"-> {
                 furhat.say(async = true) {
@@ -49,7 +49,7 @@ fun Directions(room : Room?): State = state(Parent) {
                 }
                 delay(1000)
                 furhat.gesture(CustomGestures().get_gesture(ANIMATIONS.KindFace), async = false)
-
+                delay(2000)
             }
             "learn-x"-> {
                 furhat.say(async = true) {
@@ -61,7 +61,7 @@ fun Directions(room : Room?): State = state(Parent) {
                 }
                 delay(1000)
                 furhat.gesture(CustomGestures().get_gesture(ANIMATIONS.KindFace), async = false)
-
+                delay(2000)
             }
             "inform"-> {
 
@@ -74,6 +74,7 @@ fun Directions(room : Room?): State = state(Parent) {
                 }
                 delay(2000)
                 furhat.gesture(CustomGestures().get_gesture(ANIMATIONS.KindFace), async = false)
+                delay(2000)
 
             }
             "invite"-> {
@@ -260,7 +261,7 @@ fun Directions(room : Room?): State = state(Parent) {
             }
 
         }
-
+        delay(3000)
         goto(Bye)
     }
 
